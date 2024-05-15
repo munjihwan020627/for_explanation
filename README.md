@@ -1,3 +1,6 @@
- why form onclick event could't access???
+ why button onclick event could't get text from form ???  in newRegister()
+
+
+ 
 
  
