@@ -87,7 +87,8 @@ _KNL_DMAWRITE:
    ST   A, @%_SEG_DMACNT   
    MOV   A, SEG_DMAWRITE   
    ST   A, @%_SEG_CMD   
-   JMP FAIL_RUN
+   POP   RTN   
+   JMP   *RTN   
 _KNL_DMAREADY:         
 // 매개변수      
 // D0: 장치번호   
@@ -336,4 +337,3 @@ P_MSG1   RESBOX 4
 TEMP1 BOX 48
 TEMP2 BOX 58
 TEMP3 BOX 59
-
